@@ -1,3 +1,4 @@
+/* Common Styles */
 *{
     margin: 0px;
     padding: 0px;
@@ -7,6 +8,26 @@ body{
     max-width: 1440px;
     margin: 100px auto;
 }
+:root{
+    --white-color: #FFF;
+}
+.section-gap{
+    margin-top: 100px;
+}
+.section-title{
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.section-description{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
+
 /* Navbar Styles */
 .navigation-container{
     display: flex;
@@ -46,13 +67,164 @@ body{
     display: none;
 }
 
+/* Header Explore Section */
+.explore-container{
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%) , url('./Images/Group\ 13\ \(1\)\ \(1\).png');
+        background-repeat: no-repeat;
+        margin-top: 50px;
+        border-radius: 16px;
+        width: 100%;
+        height: 500px;
+        background-size: 100% 100%, cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.explore-title{
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 24px ;
+    text-align: center;
+}
+.explore-description{
+    width: 676px;
+    text-align: center;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
 
+/* Place Selection */
+.place-select{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-top: 50px;
+    padding: 16px;
+    display: flex;
+    gap: 24px;
+}
+
+.place-input{
+    border: 0;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 8px;
+    background: #FFF;
+}
+#when{
+    padding-right: 140px;
+}
+#type{
+    padding-right: 106px;
+}
+
+.btn{
+    width: 213px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Popular Tours */
+
+.popular-tours{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box img{
+    width: 100%;
+}
+.text-container{
+    width: 50%;
+}
+
+.list{
+    padding-left: 30px ;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.list li{
+    margin-bottom: 16px;
+}
+.btn-primary{
+    padding: 14px 34px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: var(--white-color);
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: 8px;
+    border: 0;
+}
+
+/* Choose Your Destination */
+
+.dest-title, .dest-para{
+    text-align: center;
+    padding: 0px 400px;
+}
+.destination-img-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 24px;
+    justify-content: center;
+}
+.row1{
+    display: grid;
+    grid-template-columns: 573px 573px;
+    gap: 24px;
+}
+.row2{
+    display: grid;
+    grid-template-columns: 374px 474px 274px;
+    gap: 24px;
+}
+.row3{
+    display: grid;
+    grid-template-columns: 473px 673px;
+    gap: 24px;
+}
+.destination-img-container img{
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.country-name{
+    position: absolute;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+.maldives, .Indonesia, .srilanka, .northamerica, .kashmir, .Bangladesh, .bandarban{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Mobile View */
 @media screen and (max-width: 600px) {
     body{
         margin: 20px 40px;
     }
+
+    /* Nav and Title */
     .website-title{
         font-size: 1.346rem;
     }
@@ -64,5 +236,55 @@ body{
         width: 24px;
         height: 24px;
         cursor: pointer;
+    }
+
+    /* Explore Section */
+    .explore-container{
+        padding: 32px 0;
+    }
+    .explore-title{
+        font-size: 1.375rem;
+    }
+    .explore-description{
+        font-size: 0.875rem;
+        font-weight: 400;
+        width: 304px;
+    }
+    .place-select{
+        width: 80%;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+    }
+    .place-select input{
+        width: 91%;
+    }
+    .place-select select, .btn{
+        width: 100%;
+    }
+
+    /* Popular Tours Section */
+    .section-gap{
+        margin-top: 24px;
+    }
+    .popular-tours{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .text-container{
+        width: 100%;
+    }
+
+    /* Choose Your Destination */
+    .dest-title, .dest-para{
+        text-align: center;
+        padding: 0px;
+    }
+    .row1, .row2, .row3{
+        grid-template-columns: repeat(1, 100%);
+    }
+    .width{
+        width: 435px;
+        height: 176px;
     }
 }
