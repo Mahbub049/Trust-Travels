@@ -181,7 +181,7 @@ body{
 
 .dest-title, .dest-para{
     text-align: center;
-    padding: 0px 400px;
+    padding: 0px 200px;
 }
 .destination-img-container{
     margin-top: 50px;
@@ -265,6 +265,33 @@ body{
     line-height: 26px;
 }
 
+/* Customer Review */
+.review-container {
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+    display: flex;
+    gap: 24px;
+}
+.review-text{
+    text-align: center;
+}
+.reviews {
+    border: 1px solid #FF5400;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.user-photo {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+.stars {
+    color: #FF5400;
+}
+
 /* Newsletter Section */
 .newsletter{
     display: flex;
@@ -274,12 +301,12 @@ body{
 .newsletter-form{
     border-radius: 16px;
     border: 1px solid #FF5400;
-    width: 574px;
+    width: 474px;
     height: auto;
     padding: 40px;
 }
 .newsletter-img img{
-    width: 772px;
+    width: 672px;
     height: 422px;
 }
 .newsletter-title{
@@ -330,7 +357,7 @@ body{
     transform: rotate(-19.628deg);
     text-align: center;
     position: absolute;
-    left: 367px;
+    left: 267px;
     top: 220px;
 }
 .save-para{
@@ -344,6 +371,53 @@ body{
     font-size: 2rem;
     font-weight: 800;
 }
+
+/* Footer Section */
+.footer{
+    text-align: center;
+}
+.footer-website{
+    justify-content: center;
+    margin-top: 210px;
+    margin-bottom: 15px;
+}
+.footer-para{
+    display: flex;
+    justify-content: center;
+}
+.footer-para p{
+    width: 769px;
+    line-height: 26px;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.hrule{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.hrule hr{
+    width: 872px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+}
+.reserved{
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
 /* Mobile View */
 @media screen and (max-width: 600px) {
     body{
@@ -430,7 +504,7 @@ body{
         margin-top: 16px;
     }
     .reason1, .reason2, .reason3{
-        width: 335px;
+        width: 85%;
         padding: 32px 55px 32px 32px;
     }
     .reason3{
@@ -451,6 +525,10 @@ body{
         height: 48px;
     }
 
+    /* Customer Review */
+    .review-container {
+        flex-direction: column;
+    }
     /* Newsletter Responsive */
     .newsletter{
         flex-direction: column;
@@ -458,7 +536,7 @@ body{
     .newsletter-form{
         border-radius: 16px;
         border: 1px solid #FF5400;
-        width: 384px;
+        width: 85%;
         height: auto;
         padding: 40px;
     }
@@ -468,7 +546,11 @@ body{
     .savings {
         padding: 35px;
         width: 254px;
-        left: 117px;
+        left: 25%;
         top: 232px;
+    }
+
+    .footer-website{
+        margin-top: 100px;
     }
 }
