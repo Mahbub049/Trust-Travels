@@ -303,6 +303,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-items: center;
+    width: 97%;
 }
 .all-deals{
     position: absolute;
@@ -313,7 +314,7 @@ body{
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(2.5px);
     top: 56px;
-    right: 56px;
+    right: 100px;
     padding-top: 52px;
     padding-left: 50px;
 }
@@ -766,6 +767,9 @@ body{
     .reason3{
         margin-top: 32px;
         width: 50%;
+    }
+    .deals-img{
+        width: 97%;
     }
     .deals-img img{
         height: 500px;
