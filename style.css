@@ -4,7 +4,7 @@
     padding: 0px;
     font-family: 'Mulish', sans-serif;
 }
-body{
+header, main{
     max-width: 1440px;
     margin: 100px auto;
 }
@@ -474,10 +474,12 @@ body{
 /* Footer Section */
 .footer{
     text-align: center;
+    margin: 0px 0px;
+    padding-top: 100px;
+    background: rgba(19, 19, 24, 0.05);
 }
 .footer-website{
     justify-content: center;
-    margin-top: 210px;
     margin-bottom: 15px;
 }
 .footer-para{
@@ -512,6 +514,7 @@ body{
     color: #131318;
     font-size: 1rem;
     font-weight: 300;
+    padding-bottom: 100px;
 }
 
 
