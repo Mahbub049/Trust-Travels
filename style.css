@@ -292,6 +292,104 @@ body{
     color: #FF5400;
 }
 
+/* Deals and Discounts */
+.deals-content{
+    position: relative;
+}
+.deals-img-container{
+    margin-top: 48px;
+}
+.deals-img{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.all-deals{
+    position: absolute;
+    width: 579px;
+    height: 349px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    top: 56px;
+    right: 56px;
+    padding-top: 52px;
+    padding-left: 50px;
+}
+.deals-details{
+    display: flex;
+    gap: 24px;
+}
+.deals-heading{
+    margin-top: 26px;
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.deals-desc{
+    width: 85%;
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+.deals-price{
+    color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.all-deals1{
+    position: absolute;
+    width: 579px;
+    height: 349px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    top: 56px;
+    left: 56px;
+    padding-top: 52px;
+    padding-left: 50px;
+}
+.icon-color{
+    color: #FF5400;
+}
+.day{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+/* Get Lost Section */
+.getlost{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+}
+.getlost-video video{
+    width: 610px;
+    height: 424px;
+}
+.lost-title{
+    line-height: 60px;
+}
+.lost-list{
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+}
+.btn-lost{
+    margin-top: 32px;
+}
 /* Newsletter Section */
 .newsletter{
     display: flex;
@@ -529,6 +627,64 @@ body{
     .review-container {
         flex-direction: column;
     }
+
+    /* Deals Section */
+
+    .deals-img img{
+        width: 100%;
+        height: 750px;
+    }
+    .all-deals1{
+        left: 60px;
+    }
+    .all-deals, .all-deals1 {
+        width: 70%;
+        height: 449px;
+        top: 250px;
+        right: 60px;
+        padding-top: 26px;
+        padding-left: 26px;
+    }
+
+    .deals-details{
+        flex-wrap: wrap;
+    }
+    .deals-heading{
+        margin-top: 26px;
+        color: #131318;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+    .deals-desc{
+        width: 85%;
+        color: #5A5A5D;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
+    .deals-price{
+        color: #FF5400;
+        font-size: 1.25rem;
+        font-weight: 800;
+        margin-bottom: 24px;
+    }
+
+    
+
+    /* Get Lost Section */
+    .getlost{
+        flex-direction: column;
+    }
+    .getlost-video video{
+        width: 100%;
+        height: 100%;
+    }
+    .lost-title{
+        line-height: 32px;
+    }
+
     /* Newsletter Responsive */
     .newsletter{
         flex-direction: column;
@@ -541,7 +697,7 @@ body{
         padding: 40px;
     }
     .newsletter-img img{
-        width: 100%;
+        max-width: 105%;
     }
     .savings {
         padding: 35px;
@@ -552,5 +708,94 @@ body{
 
     .footer-website{
         margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    body{
+        margin: 100px 100px;
+    }
+    .place-select{
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+    .popular-tours{
+        gap: 50px;
+    }
+    .box img {
+        width: 100%;
+        height: 100%;
+    }
+    .maldives, .Indonesia, .srilanka, .northamerica, .kashmir, .Bangladesh, .bandarban {
+        position: relative;
+    }
+    .maldives{
+        left: 100px;
+    }
+    .Indonesia{
+        right: 100px;
+    }
+    .srilanka{
+        left: 135px;
+    }
+    .northamerica{
+        left: 0px;
+    }
+    .northamerica{
+        left: -10px;
+    }
+    .kashmir{
+        right: 150px;
+    }
+    .Bangladesh{
+        left: 115px;
+    }
+    .bandarban{
+        right: 80px;
+    }
+    .maldives img, .Indonesia img, .srilanka img, .northamerica img, .kashmir img, .Bangladesh img, .bandarban img {
+        width: 65%;
+        gap: 0px;
+        padding: 0px;
+    }
+    .reason1, .reason2, .reason3 {
+        width: 100%;
+        padding: 32px 55px 32px 32px;
+    }
+    .reason3{
+        margin-top: 32px;
+        width: 50%;
+    }
+    .deals-img img{
+        height: 500px;
+    }
+    .getlost-video video{
+        width: 100%;
+    }
+    .newsletter-img img {
+        width: 100%;
+        height: 422px;
+    }
+    .newsletter-form{
+        width: 40%;
+    }
+    .savings{
+        top: 50%;
+        left: 15%;
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+    body{
+        margin: 100px 100px;
+    }
+    .reason1, .reason2, .reason3 {
+        width: 474px;
+        padding: 32px 55px 32px 32px;
+    }
+    .reason3{
+        margin-top: 32px;
     }
 }
