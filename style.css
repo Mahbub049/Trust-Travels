@@ -522,7 +522,7 @@ header, main{
 
 /* Mobile View */
 @media screen and (max-width: 600px) {
-    body{
+    header, main{
         margin: 20px 40px;
     }
 
@@ -709,14 +709,10 @@ header, main{
         left: 25%;
         top: 232px;
     }
-
-    .footer-website{
-        margin-top: 100px;
-    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-    body{
+    header, main{
         margin: 100px 100px;
     }
     .place-select{
@@ -795,7 +791,7 @@ header, main{
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1440px) {
-    body{
+    header, main{
         margin: 100px 100px;
     }
     .reason1, .reason2, .reason3 {
