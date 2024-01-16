@@ -175,6 +175,7 @@ header, main{
     font-weight: 800;
     margin-top: 8px;
     border: 0;
+    cursor: pointer;
 }
 
 /* Choose Your Destination */
@@ -365,7 +366,11 @@ header, main{
     align-items: center;
     justify-content: flex-start;
 }
-
+.btn-packages{
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* Get Lost Section */
@@ -444,6 +449,7 @@ header, main{
     width: 98%;
     border: 0;
     margin-top: 8px ;
+    cursor: pointer;
 }
 .newsletter-img{
     position: relative;
@@ -649,32 +655,12 @@ header, main{
         padding-top: 26px;
         padding-left: 26px;
     }
-
     .deals-details{
         flex-wrap: wrap;
     }
-    .deals-heading{
-        margin-top: 26px;
-        color: #131318;
-        font-size: 1.5rem;
-        font-weight: 800;
-        margin-bottom: 16px;
-    }
-    .deals-desc{
-        width: 85%;
-        color: #5A5A5D;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 26px;
-        margin-bottom: 16px;
-    }
-    .deals-price{
-        color: #FF5400;
-        font-size: 1.25rem;
-        font-weight: 800;
-        margin-bottom: 24px;
-    }
-
+    .btn-packages{
+        margin-bottom: 40px;
+    }    
     
 
     /* Get Lost Section */
