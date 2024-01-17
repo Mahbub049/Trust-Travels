@@ -417,6 +417,12 @@ header, main{
     font-size: 1.5rem;
     font-weight: 800;
 }
+.hrule-news{
+    width: 80%;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin: 24px 0px;
+}
 .newsletter-para{
     color: #5A5A5D;
     font-size: 1rem;
